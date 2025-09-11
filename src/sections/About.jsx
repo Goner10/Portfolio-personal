@@ -2,9 +2,9 @@ export default function About() {
   return (
     <section id="about" className="about-section">
       <div className="container">
-        <h2 className="titleAbout">About me</h2>
+        <h2 className="titleAbout">Hi, I'm Gonzalo.</h2>
         <p className="textoAbout">
-          Empecé en Administración y Dirección de Empresas y trabajé casi dos años en una
+          I'm a young developer from Valencia trabajé casi dos años en una
           empresa de distribución de gasóleo a domicilio. Esa etapa me dio base de gestión y trato
           con clientes. Di un giro al sector IT con el Bootcamp Full Stack en EDEM y, para
           consolidar, cursé el Ciclo Superior de DAW con foco en prácticas y experiencia real.
