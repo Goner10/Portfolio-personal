@@ -6,8 +6,7 @@ export default function About() {
         <p className="textoAbout">
           I'm a young developer from Valencia trabajé casi dos años en una
           empresa de distribución de gasóleo a domicilio. Esa etapa me dio base de gestión y trato
-          con clientes. Di un giro al sector IT con el Bootcamp Full Stack en EDEM y, para
-          consolidar, cursé el Ciclo Superior de DAW con foco en prácticas y experiencia real.
+          con clientes.
         </p>
         <p className="textoAbout">
           Hoy me centro en desarrollo web: HTML, CSS, JavaScript y buenas prácticas de

@@ -99,10 +99,16 @@ h1,h2{
     margin:.1em 0
 }
 
+#home { 
+  padding-top: 18px;      
+  padding-bottom: 0;          
+  border-bottom: 0;          
+}
 
 .hero{
- 
-  padding-top: 33px;                
+ position: relative;
+  padding-top: 23px;    
+  padding-bottom: 8px;          
 }
 .hero h1{
     font-size:3.3rem;
@@ -121,14 +127,14 @@ h1,h2{
 .hero-grid{
   display: grid;
   grid-template-columns: 1.1fr 0.9fr; 
-  gap: 33px;
+  gap: 23px;
   align-items: center;
 }
 .hero-grid > div:first-child{
   display: flex;
   flex-direction: column;
   align-items: center; 
-  gap: 10px;          
+  gap: 8px;          
    transform: translateY(-20px);   
 }
 .hero-img{
@@ -138,10 +144,21 @@ h1,h2{
   margin-left: 0;                   
   transform: translateX(80px);
 }
-
+.setup-ill{
+  position: static;        
+  display: block;   
+  width: clamp(600px, 50vw, 720px);
+  height: auto;
+  margin: -53px auto -44px; 
+  max-width: 100%;
+  transform: none;          /* quita el translateX */
+  pointer-events: none;
+  opacity: 0.9;
+}
 
 .hero .tituloHome{
   margin: 0;
+  margin-top: 2px;
   line-height: 1.05;                
 }
 .hero .tituloHome + .tituloHome{
@@ -194,6 +211,7 @@ h1,h2{
   align-items: center;
   height: 100%;
   gap: 12px;
+  transform: translateY(-13px);
 }
 
 .brand {
@@ -287,6 +305,7 @@ header.scrolled .brand .logo-icon { display: block; }
 
 
 @media (max-width: 900px){
+
     .brand {
     margin-left: 0;      
   }
@@ -310,6 +329,7 @@ header.scrolled .brand .logo-icon { display: block; }
   .nav-wrap{
     display: flex;
     justify-content: space-between;
+    transform: translateY(5px);
   }
 
   
@@ -353,9 +373,22 @@ header.scrolled .brand .logo-icon { display: block; }
 
 
     /*HERO*/
+    #home{
+    padding-top: 70px;
+    padding-bottom: 0;        /* <--- elimina el hueco enorme en móvil */
+  }
+
+    .setup-ill{
+    width: min(460px, 85vw);
+    max-height: 35vh;
+    margin: -65px auto -25px;
+    opacity: 0.85;
+  }
+
 
   .hero{
-    padding-top: 46px;           
+    padding-top: 46px;   
+    padding-bottom: 200px;        
   }
     .hero-grid{
     grid-template-columns: 1fr;
@@ -413,14 +446,25 @@ header.scrolled .brand .logo-icon { display: block; }
 .titleAbout{
     display: flex;
     justify-content: center;
-    margin-bottom: 13px;
+    margin-top: 23px;
+    margin-bottom: 23px;
     color: var(--bg);
 }
 .textoAbout{
     color: var(--bg);
+    margin-bottom: 33px;
 }
 
 
+@media (max-width: 900px){
+    .titleAbout{
+        margin-top: -8px;
+    }
+    .textoAbout{
+    color: var(--bg);
+    margin-bottom: 5px;
+}
+}
 
 
 

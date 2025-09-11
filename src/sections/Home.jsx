@@ -1,5 +1,7 @@
 import GonAnimado from "../assets/GonAnimado.png";
-import GonCirculo from "../assets/GonCiruculo.png"
+import GonCirculo from "../assets/GonCiruculo.png";
+import Setup from "../assets/setup2.svg"
+import Setup1 from "../assets/setup3.png";
 
 
 export default function Home() {
@@ -13,7 +15,7 @@ export default function Home() {
           <p className="textoHome">
             Me enfoco en interfaces claras, rápidas y accesibles.
           </p>
-          <a className="btnHome" href="#projects">Ver proyectos</a>
+          <a className="btnHome" href="#projects">See projects</a>
         </div>
 
         {/* Columna derecha */}
@@ -21,6 +23,7 @@ export default function Home() {
           <img className="hero-img" src={GonCirculo} alt="Gonzalo - Desarrollo Web" />
         </div>
       </div>
+      <img className="setup-ill" src={Setup1} alt="Setup" />
     </section>
   );
 }
