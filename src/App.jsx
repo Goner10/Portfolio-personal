@@ -1,8 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import Home from "./sections/Home";
-import About from "./sections/About";
-import Projects from "./sections/Proyectos";
-import Contact from "./sections/Contact";
+import { Link, Outlet, useNavigate, useLocation } from "react-router-dom";
 import logo from "./assets/logo.png";
 import logoSolo from "./assets/logoSolo.png";
 
@@ -11,6 +8,23 @@ export default function App() {
   const menuRef = useRef(null);
   const toggleRef = useRef(null);
   const handleNavClick = () => setOpen(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  function goToSection(sectionId){
+    setOpen(false);
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Espera a que se pinte la landing antes de hacer scroll
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 60);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
 
   
   useEffect(() => {
@@ -76,7 +90,7 @@ useEffect(() => {
          
           {/* Logo izquierda */}
 
-        <a className="brand" href="#home" aria-label="Inicio">
+        <a className="brand" href="#home" aria-label="Inicio" onClick={(e)=>{e.preventDefault(); goToSection('home');}}>
   <img className="logo-full" src={logo} alt="Logotipo" />
   <img className="logo-icon" src={logoSolo} alt="" aria-hidden="true" />
   <span className="sr-only">Inicio</span>
@@ -102,17 +116,16 @@ useEffect(() => {
             id="primary-menu"
             className={`nav-center ${open ? "open" : ""}`}
           >
-            <a href="#home" onClick={handleNavClick}>Home</a>
-            <a href="#about" onClick={handleNavClick}>About</a>
-            <a href="#projects" onClick={handleNavClick}>Projects</a>
-            <a href="#contact" onClick={handleNavClick}>Contact</a>
+            <a href="#home" onClick={(e)=>{e.preventDefault(); goToSection('home');}}>Home</a>
+            <a href="#about" onClick={(e)=>{e.preventDefault(); goToSection('about');}}>About</a>
+            <a href="#projects" onClick={(e)=>{e.preventDefault(); goToSection('projects');}}>Projects</a>
+            <a href="#contact" onClick={(e)=>{e.preventDefault(); goToSection('contact');}}>Contact</a>
           </div>
 
 
           <div className="nav-right">
-  {/* De momento apunta a #contact. Cuando tengas el formulario, cambia a #hello (o la ruta que uses) */}
-  <a href="#contact" className="btn-cta" aria-label="Say hello">Say Hello!</a>
-</div>
+  <Link to="/hello" className="btn-cta" aria-label="Say hello">Say Hello!</Link>
+          </div>
         </nav>
       </header>
 
@@ -120,14 +133,11 @@ useEffect(() => {
       <div style={{ height: "var(--header-h)" }} />
 
       <main>
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
+        <Outlet />
       </main>
 
-      <footer className="container" style={{ padding: "24px 0" }}>
-        © {new Date().getFullYear()} Gonzalo Martí Peirats
+      <footer style={{ padding: "24px 0" }}>
+        <div className="container">© {new Date().getFullYear()} Gonzalo Martí Peirats</div>
       </footer>
     </>
   );

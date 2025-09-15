@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="container">
-        <h2>Projects</h2>
+        <h2 className="titleProyectos">Projects</h2>
         <div className="grid" style={{gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))"}}>
           {proyectos.map(p => <ProjectCard key={p.title} p={p} />)}
         </div>

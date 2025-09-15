@@ -16,7 +16,8 @@ export default function Home() {
             Fast & accessible web experiences. <br />
             Clean code, clean interfaces.
           </p>
-          <a className="btnHome" href="#projects">See projects</a>
+          <a className="btnHome" href="#projects" onClick={(e)=>{e.preventDefault(); goToSection('projects');}}>See projects</a>
+          
         </div>
 
         {/* Columna derecha */}

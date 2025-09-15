@@ -599,6 +599,15 @@ header nav a:not(.brand):hover {
 
 
 /*SECCION PROYECTOS*/
+.titleProyectos{
+  display: flex;
+  justify-content: center;
+  margin-top: -23px;
+  margin-bottom: 33px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--brand);
+}
 
 .card {
   background: var(--surface);
