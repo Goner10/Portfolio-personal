@@ -96,6 +96,11 @@ useEffect(() => {
   <span className="sr-only">Inicio</span>
 </a>
 
+          {/* CTA centrado solo móvil */}
+          <div className="nav-cta-mobile">
+            <Link to="/hello" className="btn-cta" aria-label="Say hello">Say Hello!</Link>
+          </div>
+
           {/* Botón hamburguesa solo móvil */}
           <button
           ref={toggleRef} 
@@ -138,6 +143,7 @@ useEffect(() => {
 
       <footer style={{ padding: "24px 0" }}>
         <div className="container">© {new Date().getFullYear()} Gonzalo Martí Peirats</div>
+        <p>Designed & Developed by Gonzalo Martí Peirats</p>
       </footer>
     </>
   );

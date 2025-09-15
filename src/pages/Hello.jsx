@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
+
 export default function Hello(){
+  useEffect(() => {
+    const previousHeaderHeight = getComputedStyle(document.documentElement).getPropertyValue('--header-h');
+    document.documentElement.style.setProperty('--header-h', '130px');
+    return () => {
+      document.documentElement.style.setProperty('--header-h', previousHeaderHeight || '100px');
+    };
+  }, []);
   return (
     <section id="hello">
       <div className="container">
-        <h2>Say Hello</h2>
+        <h2>Hi, Nice to meet you!</h2>
         <p style={{ marginTop: 0, marginBottom: 12 }}>Completa el formulario y me pondré en contacto contigo.</p>
 
         <form action="https://formsubmit.co/gmartipeirats@gmail.com" method="POST" className="contact-form">
