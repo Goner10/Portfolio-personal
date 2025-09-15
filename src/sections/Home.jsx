@@ -13,7 +13,8 @@ export default function Home() {
           <h1 className="tituloHome">WEB</h1>
           <h1 className="tituloHome"> DEVELOPER</h1>
           <p className="textoHome">
-            Me enfoco en interfaces claras, rápidas y accesibles.
+            Fast & accessible web experiences. <br />
+            Clean code, clean interfaces.
           </p>
           <a className="btnHome" href="#projects">See projects</a>
         </div>
