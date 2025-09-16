@@ -163,7 +163,7 @@ useEffect(() => {
          <div className="footer-bottom">
            <div className="container footer-bottom-inner">
              <span>© {new Date().getFullYear()} Gonzalo Martí Peirats</span>
-             <span>Designed & Developed by Gonzalo Martí Peirats</span>
+             <span> Designed & Developed by Gonzalo Martí Peirats</span>
            </div>
          </div>
        </footer>
