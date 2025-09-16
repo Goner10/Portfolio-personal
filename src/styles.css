@@ -401,7 +401,7 @@ header nav a:not(.brand):hover {
     .setup-ill{
     width: min(460px, 85vw);
     max-height: 35vh;
-    margin: -75px auto -58px;
+    margin: -75px auto -53px;
     opacity: 0.85;
     object-fit: contain; 
   }
