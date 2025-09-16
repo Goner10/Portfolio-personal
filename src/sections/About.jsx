@@ -13,12 +13,12 @@ export default function About() {
       <div className="container">
         <h2 className="titleAbout">Hi, I'm Gonzalo. Nice to meet you</h2>
         <p className="textoAbout">
-        I’m a web developer from Valencia focused on clean code, 
-        clear interfaces, and fast performance. I first studied Business Administration at university, but in 2022 I made a 180º career shift to programming and web design. Since then, I’ve built and deployed 
+        I'm a web developer from Valencia focused on clean code, 
+        clear interfaces, and fast performance. I first studied Business Administration at university, but in 2022 I made a 180º career shift to programming and web design. Since then, I've built and deployed 
         real-world projects with a mobile-first, accessible approach.
                  </p>
                  <p className="textoAbout">
-                 Fluent in Spanish and English, I’m open to freelance projects as well as long-term collaborations.
+                 Fluent in Spanish and English, I'm open to freelance projects as well as long-term collaborations.
         </p>
        
       </div>

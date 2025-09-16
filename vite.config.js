@@ -6,5 +6,16 @@ export default defineConfig({
   plugins: [react()],
   // Necesario para GitHub Pages en subcarpeta del usuario
   base: '/Portfolio-personal/',
-  build: { outDir: 'docs' }
+  build: { 
+    outDir: 'docs',
+    // Compatible con CSP de GitHub Pages
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    },
+    // Usar esbuild para evitar problemas de CSP
+    minify: 'esbuild',
+    target: 'es2015'
+  }
 })
