@@ -574,11 +574,12 @@ header nav a:not(.brand):hover {
     margin-top: 0;
     font-size: 1.5rem;
     text-align: center;
-    
+    font-weight: 500;
   }
   .textoAbout{
     margin: 0 auto 8px;
     text-align: center;
+    
   }
   .about-grid{
     display: flex;                
