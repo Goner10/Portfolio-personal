@@ -566,7 +566,9 @@ header nav a:not(.brand):hover {
 @media (max-width: 900px){
   .about-section .container{
     padding-inline: 24px;
-    margin-top: 16px;
+    margin-top: -6px;
+    width: 360px;
+    
   }
   .titleAbout{
     margin-top: 0;
@@ -657,9 +659,12 @@ header nav a:not(.brand):hover {
 }
 
 
+/*SECCION CONTACTO*/
 
+#contact{
+  background: linear-gradient(135deg, var(--brand-bg) 0%, var(--surface) 100%);
 
-
+}
 
 
 

@@ -4,7 +4,7 @@ import Setup from "../assets/setup2.svg"
 import Setup1 from "../assets/setup3.png";
 
 
-export default function Home() {
+export default function Home({ goToSection }) {
   return (
    <section id="home" className="hero">
       <div className="container hero-grid">

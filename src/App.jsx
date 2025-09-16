@@ -138,10 +138,10 @@ useEffect(() => {
       <div style={{ height: "var(--header-h)" }} />
 
       <main>
-        <Outlet />
+        <Outlet context={{ goToSection }} />
       </main>
 
-      <footer style={{ padding: "24px 0" }}>
+      <footer id="footer" style={{ padding: "14px 0" }}>
         <div className="container">© {new Date().getFullYear()} Gonzalo Martí Peirats</div>
         <p>Designed & Developed by Gonzalo Martí Peirats</p>
       </footer>

@@ -12,7 +12,7 @@ export default function Hello(){
     <section id="hello">
       <div className="container">
         <h2>Hi, Nice to meet you!</h2>
-        <p style={{ marginTop: 0, marginBottom: 12 }}>Completa el formulario y me pondré en contacto contigo.</p>
+        <p style={{ marginTop: 0, marginBottom: 12 }}>Fill the form and I'll contact you.</p>
 
         <form action="https://formsubmit.co/gmartipeirats@gmail.com" method="POST" className="contact-form">
           <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio" />
@@ -21,19 +21,19 @@ export default function Hello(){
 
           <div className="grid">
             <div>
-              <label htmlFor="name">Nombre</label>
-              <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+              <label htmlFor="name">Name:</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
             </div>
             <div>
-              <label htmlFor="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+              <label htmlFor="email">Email:</label>
+              <input id="email" name="email" type="email" placeholder="your@email.com" required />
             </div>
             <div style={{ gridColumn: "1 / -1" }}>
-              <label htmlFor="message">Mensaje</label>
-              <textarea id="message" name="message" rows={5} placeholder="Cuéntame en qué puedo ayudarte" required />
+              <label htmlFor="message">Message:</label>
+              <textarea id="message" name="message" rows={5} placeholder="Tell me how can I help you" required />
             </div>
             <div style={{ gridColumn: "1 / -1" }}>
-              <button type="submit" className="btn">Enviar</button>
+              <button type="submit" className="btn">Send</button>
             </div>
           </div>
         </form>

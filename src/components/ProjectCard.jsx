@@ -7,8 +7,8 @@ export default function ProjectCard({ p }) {
         {p.tech.map(t => <span key={t} className="tag">{t}</span>)}
       </p>
       <p>
-        {p.live && <a className="btn" href={p.live} target="_blank" rel="noreferrer">Ver proyecto</a>}{" "}
-        {p.repo && <a className="btn" href={p.repo} target="_blank" rel="noreferrer">Código</a>}
+        {p.live && <a className="btn" href={p.live} target="_blank" rel="noreferrer">View project</a>}{" "}
+        {p.repo && <a className="btn" href={p.repo} target="_blank" rel="noreferrer">Code</a>}
       </p>
     </article>
   );
