@@ -861,6 +861,32 @@ header .container{
   box-shadow: 0 2px 8px rgba(16, 137, 139, 0.2);
 }
 
+.contact-form-success {
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: rgba(16, 137, 139, 0.12);
+  border: 1px solid var(--brand-light);
+  color: var(--brand);
+  font-weight: 500;
+}
+
+.contact-form-error {
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: rgba(180, 40, 40, 0.08);
+  border: 1px solid rgba(180, 40, 40, 0.35);
+  color: #8b2a2a;
+}
+
+.contact-form .btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
 /* Responsive para móvil */
 @media (max-width: 768px) {
   #hello {
