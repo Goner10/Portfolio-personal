@@ -31,7 +31,7 @@ export const proyectos = [
   },
   {
     title: "Seguros Redondo -  2026",
-    description: "Responsive website developed for an insurance brokerage in Valencia, focused on clear information architecture, fast performance, and user-friendly navigation to improve client engagement and lead generation.",
+    description: "Responsive website developed for an insurance brokerage, focused on clear information architecture, fast performance, and user-friendly navigation to improve client engagement and lead generation.",
     tech: ["HTML","CSS","JS", "Tailwind"],
     live: "https://www.segurosredondo.es/", 
     repo: "https://github.com/Goner10/Seguros-Redondo" 
